@@ -5,7 +5,7 @@
 /* criação de variaveis de cores */
 /* obrigatoriamente as variaveis precisam começar o nome com o -- */
 :root {
-  --background: #f7fad4;
+  --background: #f5fabd;
   --purple: #0010f3;
   --dark-purple: #080146;
   --purple-disabled: #6b6570;
@@ -20,7 +20,7 @@
 }
 
 body {
-  background-color: var(--background);
+background-color: var(--background);
 }
 
 p {
@@ -102,6 +102,18 @@ footer {
   border-top: 2px solid var(--purple);
   margin-top: 2rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.rodape{
+  align-items: center;
   justify-content: center;
 }
 
