@@ -12,7 +12,6 @@
   --green: #79ffd2;
 }
 
-/* remover todo o padding e margem que o navegador possa colocar em algum elemento da tela */
 * {
   padding: 0;
   margin: 0;
@@ -28,7 +27,6 @@ p {
   margin-bottom: 0.75rem;
 }
 
-/* colocar as mesmas propriedades para vários elementos de uma vez, separando eles por virgula */
 h1, h2, h3, a, nav p {
   font-family: 'Bangers', cursive;
   color: var(--purple);
@@ -55,10 +53,7 @@ h3 {
 
 nav {
   display: flex;
-  /* definir o tamanho para 70 da tela, sendo que a tela sempre vai até o 100 */
-  /* pode se dizer que está usando 70% da tela */
   width: 70vw;
-  /* colocar 0 de margem em cima e em baixo, e automatica para os lados, isso vai deixar o conteudo centralizado */
   margin: 0 auto;
   justify-content: space-between;
   font-size: 2.25rem;
@@ -78,12 +73,10 @@ a {
   transition: text-shadow 0.2s ease-in-out;
 }
 
-/* aplicar uma sombra no texto quando passado o mouse por cima, pra dar um efeito no menu */
 a:hover {
   text-shadow: 0 0 2px var(--purple);
 }
 
-/* diminuir o tamanho da linha de divisão e centralizar ela, pra ela não pegar a tela inteira */
 hr {
   width: 70vw;
   margin: 2.5rem auto;
@@ -121,7 +114,6 @@ footer {
   color: var(--purple-disabled);
 }
 
-/* ! Configurações da index.html */
 .perfil {
   display: flex;
   background-color: var(--green);
@@ -140,8 +132,6 @@ footer {
 
 .video {
   width: 65vw;
-  /* forçar a proporção do video, sempre largura/altura */
-  /* nesse exemplo, pra cada 16 pontos na largura, terá 9 pontos na altura... é o padrão de uma TV por exemplo */
   aspect-ratio: 16/9;
   margin: 0 auto;
   display: block;
@@ -149,7 +139,6 @@ footer {
   margin-top: 1rem;
 }
 
-/* ! Configurações do contato */
 .contato {
   display: flex;
   gap: 3rem;
@@ -166,7 +155,6 @@ footer {
   width: 35vw;
   aspect-ratio: 16/9;
   border-radius: 8px;
-  /* código hexadecimal normalmente é feito com 6 digitos.. aqui tem 8, sendo que os ultimos 2, é pra colocar transparencia */
   box-shadow: 8px 8px 16px #4b324e88;
 }
 
@@ -212,19 +200,8 @@ button:hover {
   margin-bottom: 1rem;
 }
 
-
-/* ! Configurações de responsividade */
-/* quando a tela tiver uma largura máxima de até 1000px, usar essas regras,  */
-/* se a tela for maior do que isso, toda essa parte do código é ignorada */
-/* gerando assim, a famosa responsividade para aparelhos de tamanho diferente */
 @media (max-width: 1000px) {
-  /* usei a mesma classe perfil, que está na linha 113 desse código, e estou adicionando uma propriedade a mais para ela */
-  /* quando a tela for pequena, a exibição da imagem e do texto, em vez de ficar uma ao lado da outra */
-  /* vai ficar com a imagem em cima e o texto em baixo, facilitando a visualização em um celular, por exemplo. */
   .perfil {
     flex-direction: column-reverse;
   }
 }
-
-
-/* caso tenha alguma dúvida em algo que não foi comentado nesse código, chama no discord, e fala qual parte foi, que eu explico. */
