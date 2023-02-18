@@ -9,7 +9,7 @@
   --purple: #0010f3;
   --dark-purple: #080146;
   --purple-disabled: #6b6570;
-  --green: #32f0b0;
+  --green: #79ffd2;
 }
 
 /* remover todo o padding e margem que o navegador possa colocar em algum elemento da tela */
@@ -85,7 +85,7 @@ a:hover {
 
 /* diminuir o tamanho da linha de divisão e centralizar ela, pra ela não pegar a tela inteira */
 hr {
-  width: 60vw;
+  width: 70vw;
   margin: 2.5rem auto;
   height: 2px;
   border: none;
@@ -129,11 +129,13 @@ footer {
   border-radius: 16px;
   align-items: center;
   gap: 20px;
+  border: 2px solid black;
 }
 
 .foto {
   width: 250px;
   border-radius: 8px;
+  border: 2px solid black;
 }
 
 .video {
@@ -144,7 +146,7 @@ footer {
   margin: 0 auto;
   display: block;
   border-radius: 8px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 /* ! Configurações do contato */
